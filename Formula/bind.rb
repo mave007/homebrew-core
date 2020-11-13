@@ -203,5 +203,6 @@ class Bind < Formula
   test do
     system bin/"dig", "-v"
     system bin/"dig", "brew.sh"
+    system bin/"dig", "ü.cl"
   end
 end
