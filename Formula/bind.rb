@@ -57,7 +57,8 @@ class Bind < Formula
                           "--with-libjson=#{Formula["json-c"].opt_prefix}",
                           "--with-python-install-dir=#{vendor_site_packages}",
                           "--with-python=#{Formula["python@3.9"].opt_bin}/python3",
-                          "--without-lmdb"
+                          "--without-lmdb",
+                          "--with-libidn2=#{Formula["libidn2"].opt_prefix}"
 
     system "make"
     system "make", "install"
